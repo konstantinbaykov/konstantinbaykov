@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konstantin Baykov | Product Designer</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+
+    <header class="header container">
+      <div class="header__logo">
+        <a class="header__title link" href="index.html"><span class="icon-back"></span></a>
+      </div>
+
+      <nav class="header__nav" id="dropper">
+        <ul>
+          <!-- <li><a class="link" href="about.html">About & Contacts</a></li> -->
+          <li><a class="link" href="mailto: usual.member@gmail.com">usual.member@gmail.com</a></li>
+          <li><a class="link" target="_blank" href="https://linkedin.com/in/baykovkonstantin">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <span class="header__burger" onClick="toggleDiv('dropper');"></span>
+    </header>
+
+    <main class="content content--project container">
+      <div class="content__text container">
+        <h1 class="content__title">
+          Shelf
+        </h1>
+        <p>
+          Portable Data Terminal app for warehouse employees to perform all operations in the warehouse: order collection, acceptance of goods, control of expiration dates, out-of-stock appearance, and so on.
+        </p>
+        <a class="link link--publication" target="_blank" href="https://www.bloomberg.com/news/articles/2020-01-28/online-groceries-delivered-faster-than-amazon?cmpid=socialflow-facebook-business&utm_medium=social&utm_campaign=socialflow-organic&utm_content=business&utm_source=facebook">
+          Russia’s Google Will Bring You Groceries in Just 15 Minutes <span class="comment">— Bloomberg</span>
+        </a>
+        <a class="link link--publication" target="_blank" href="https://www.youtube.com/watch?v=NtHhprIwv3E&feature=youtu.be&t=886">
+          How "dark stores" in Lavka operate (eng subs) <span class="comment">— YouTube</span>
+        </a>
+      </div>
+
+      <div class="content__text container">
+        <h3 class="content__h3">
+          My responsibilities on this project:
+        </h3>
+        <ul>
+          <li>• Leading the design for a product;</li>
+          <li>• Creating cross-service scenarios with other products at Yandex ecosystem;</li>
+          <li>• Development team coordination;</li>
+          <li>• Conducting a user researches, interviews, and usability testings;</li>
+          <li>• Design system development.</li>
+        </ul>
+      </div>
+
+      <div class="content__text container">
+        <h2 class="content__h2">
+          Case 1: Task Sharing
+          <span class="comment">Splitting or sharing tasks allows multiple warehouse employees to work simultaneously on resource-intensive tasks.</span>
+        </h2>
+        <p>
+          Goods acceptance is one of the most important and time-consuming processes (both in terms of physical strength and time). When Lavka was first rolled out, the deliveries were small and perfectly handled by one storekeeper, but now the average process might contain several hundred items. The whole cycle, like all other processes, according to the original logic, was assigned to one person and was carried out only by him. But as the number of deliveries and items increased, so one storekeeper couldn't handle this task alone.
+        </p>
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/shelf/tasksharing/photo.jpg"
+            srcset="assets/pic/shelf/tasksharing/photo@2x.jpg 2x">
+        </div>
+        <!-- <p class="comment"> — </p> -->
+        <p>
+          More than that, a few months ago, it was decided to introduce a rating system for storekeepers. Such systems for a long time existed for couriers and worked well. For storekeepers, a high rating means salary bonuses.
+        </p>
+        <p>
+          Once we noticed that the time spent on acceptance increased dramatically. The only way to find out the reason was an urgent trip to the warehouse during the main deliveries. And in the warehouse, I saw what we didn't expect to see. To the usual request of one storekeeper to another to help with acceptance, the second one refused, motivating it with the fact that only the first one would receive “points” for completing the task.
+        </p>
+        <p>
+          I needed to think over how to motivate one storekeeper to help another. That was obvious that if everything was fine before the introduction of the rating system, logically, then the problem lies in this system, namely, the unfair distribution of points for several storekeepers completing one task. All storekeepers, who are involved, needed to get points.
+        </p>
+
+        <h3 class="content__h3">First Iteration</h3>
+        <p>
+          The result of a first iteration was the ability of the main storekeeper to indicate the people who helped him with the acceptance process at the final step.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/tasksharing/pic1.jpg"
+            srcset="assets/pic/shelf/tasksharing/pic1@2x.jpg 2x">
+        </div>
+        <!-- <p class="comment"> — </p> -->
+        <p>
+          This option was discarded because:
+        </p>
+        <ul>
+          <li>• This option covered all the acceptance processes, even those where only one storekeeper worked, which means that this step is redundant and could mislead new employees;</li>
+          <li>• A step could be easily skipped, which means that the problem is not solved by 100%.</li>
+        </ul>
+
+        <h3 class="content__h3">Second Iteration</h3>
+        <p>
+          During the second iteration, I changed the approach a bit. The main storekeeper, who is already busy with goods acceptance, is too busy and doesn't have enough hands not only to manage to accept everything but also to indicate someone who helped with the process. I decided that the storekeeper, who is asked for help, has free time, which means that the process of "connecting to help" should be focused on him.
+        </p>
+        <p>
+          As a result, we came out with the following scenario:
+        </p>
+        <ul>
+          <li>1. A storekeeper who is busy with acceptance is asking someone for help.</li>
+          <li>2. A free storekeeper opens a special section in an app and enters the task number, which the first one tells him.</li>
+          <li>3. After entering and confirming, the free storekeeper becomes the second equal executor of the task.</li>
+        </ul>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/tasksharing/pic2.jpg"
+            srcset="assets/pic/shelf/tasksharing/pic2@2x.jpg 2x">
+        </div>
+        <p>
+          The idea seemed completely working and we began to develop it. After testing it afterward at the office in the virtual warehouse, the concept was still working and we released it in the next update. After the update, the acceptance speed increased and this task was considered successfully solved for some time.
+        </p>
+        <p>
+          However, after a couple of weeks I was in the warehouse and saw that the splitting of the task was different from what we tested in the office:
+        </p>
+        <ul>
+          <li>• In the office we were without a time factor, casually gave one device to someone so that he could casually retype the task number. That didn’t work at the warehouse. A free storekeeper took the device, stopping the acceptance process, retyped the task number, and waited (the process of copying the task takes several seconds or minutes). It would seem logical to give the device back to the owner, but the second storekeeper held both devices in order to check the order number, fix an error if appeared to try again;</li>
+          <li>• If the task number was not retyped, then it was voiced by the first storekeeper. In the warehouse, unlike the office, there are a lot of loud sounds, so it was easier to use the first option.</li>
+        </ul>
+
+        <h3 class="content__h3">Final Iteration 🎉</h3>
+        <p>
+          And there, in a warehouse, it dawned on me. First, all tasks are generated in WMS and have a unique id and a unique URL. Second, almost all of our processes are based on scanning mechanics. So why not generate a unique QR code for the task, which can be easily scanned by another storekeeper.
+        </p>
+        <p>
+          Now the splitting process looks like that:
+        </p>
+        <ul>
+          <li>• The main storekeeper opens the section with the QR code of the task and lets another one scan this code;</li>
+          <li>• That's it.</li>
+        </ul>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/tasksharing/pic3.jpg"
+            srcset="assets/pic/shelf/tasksharing/pic3@2x.jpg 2x">
+        </div>
+        <p>
+          No voicing of order numbers and handing the devices to other hands. Well, yes, the process again focuses on the main storekeeper, but despite this, the speed of interaction has increased significantly. Moreover, the storekeeper can always ask the warehouse manager to open the task page at WMS and scan the QR code from there if the first storekeeper is already very busy. As a result of further interviews with the storekeepers, the function is described as very understandable and easy to use.
+        </p>
+        <p>
+          Now, this feature is included in all processes, which means it is possible to divide any task between several storekeepers, which not only helps to speed up the acceptance process, but also all of the other processes.
+        </p>
+      <!-- end of case 1 -->
+      </div>
+
+      <div class="content__text container">
+        <h2 class="content__h2">
+          Case 2: Mark as "absent"
+          <span class="comment">Searching for a solution for marking the good as "absent" when it cannot be scanned.</span>
+        </h2>
+        <p>
+          The next interesting case I want to share is the functionality of marking the product as "non-existent". Let’s have a look at the goods acceptance process again.
+        </p>
+        <p>
+          Despite the use of all of the modern technologies in our work, the human factor is still present. That's why certain goods may be missing from the supply. We successfully solve the problem of accepting 10 bottles of milk instead of 20, by entering the actual quantity at the acceptance screen. Based on this information a document is later formed for the additional delivery. But how you can mark a product that is completely absent, when you won’t be able to scan it out of the box?
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/markasabsent/pic1.jpg"
+            srcset="assets/pic/shelf/markasabsent/pic1@2x.jpg 2x">
+        </div>
+        <p>
+          For a long time, the problem was solved with the help of the warehouse manager, who, at the request of the storekeeper, opened the document of this delivery in the database, found the right product, opened its card and the storekeeper scanned the barcode and entered "zero". Obviously, such a solution to the problem wasn't good enough.
+        </p>
+        <p>
+          The whole UI of Shelf can be divided into two types: a list of products and a product page. The product page occurs after scanning the product's barcode. Logically, if you can’t go to the page for the non-existent product, you need to mark it as "absent" on page with a list of products.
+        </p>
+
+        <h3 class="content__h3">First Iteration</h3>
+        <p>
+          The result of the first iteration was the use of gestures, namely, swipe cards, after which the button appeared, where you could tap and mark the product as "absent". The mechanics weren't flexible & scalable, because only one button could be placed there. Also, according to the results of testing, swipes on devices, due to their limited capacity and the web-view technology we use, didn't work steadily.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/markasabsent/pic2.jpg"
+            srcset="assets/pic/shelf/markasabsent/pic2@2x.jpg 2x">
+        </div>
+
+        <h3 class="content__h3">Second Iteration</h3>
+        <p>
+          After I refused the gestures, I tried to solve the problem using double-tap, but quickly realized it wasn't intuitive and we'd have to explain to employees how it works. Besides, the mechanics still weren't flexible & scalable.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/markasabsent/pic3.jpg"
+            srcset="assets/pic/shelf/markasabsent/pic3.jpg 2x">
+        </div>
+
+        <h3 class="content__h3">Last Iteration</h3>
+        <p>
+          The final solution was the standard mechanic that is used on Android devices — long-press.
+        </p>
+        <p>
+          When a finger touched the card, it began to get a little darker, and a progress bar appeared under the finger, and after progress bar completion contextual actions appeared. The solution solved the problem of displaying several actions, and also had a good interface response in the form of a change in color, size, and a progress bar. So the card became interactive, and the progress bar showed how much more you need to hold your finger to see contextual actions.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/markasabsent/pic4.jpg"
+            srcset="assets/pic/shelf/markasabsent/pic4@2x.jpg 2x">
+        </div>
+        <p>
+          According to the results of testing in warehouses, the mechanics worked as I expected. However, some storekeepers said they didn't see this standard progress bar behind their thumb, even though the component was of a standard size.
+        </p>
+
+        <h3 class="content__h3">Final touch 🎉</h3>
+        <p>
+          To solve this remaining part of the problem, I reworked the progress bar and placed it not around the tap point, but the entire card. The result solved the problems of all storekeepers.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/assets/pic/shelf/markasabsent/pic5.jpg"
+            srcset="assets/pic/shelf/markasabsent/pic5@2x.jpg 2x">
+        </div>
+        <p>
+          We introduced this function recently, and since then, according to our data, the markup of the product as absent was no longer done through the database and the manager.
+        </p>
+      <!-- end of case 2 -->
+      </div>
+
+      <div class="content__text container">
+        <h2 class="content__h2">
+          Case 3: Data entry
+          <span class="comment">Observations, experiments, and work on data entry components.</span>
+        </h2>
+        <p>
+          In the beginning, all methods of entering information were done by using input and a standard Android keyboard.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/keyboard/pic1.jpg"
+            srcset="assets/pic/shelf/keyboard/pic1@2x.jpg 2x">
+        </div>
+        <p>
+          But over time, I began to realize that the keyboard, at least in its original implementation, didn't fit our needs. The main problem was its size: it covered too much of content: a product's photo, product's description and attributes, so it was very difficult to use the screen. Besides, on each of the screens, we show the info-blocks with the steps expected from the storekeeper, and this also takes place.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/keyboard/pic2.jpg"
+            srcset="assets/pic/shelf/keyboard/pic2@2x.jpg 2x">
+        </div>
+        <p>
+          Also, we noticed another important problem — employees could accept more goods (by entering a bigger number) than indicated in the documents, although according to our regulations, it is impossible to accept more goods — so this pattern led to errors in the acceptance process.
+        </p>
+        <p>
+          But how to enter data without a keyboard and without making errors? Scan each item individually? And if there are a hundred items or more? This option is definitely not convenient. The solution came from shopping apps.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/keyboard/pic3.jpg"
+            srcset="assets/pic/shelf/keyboard/pic3@2x.jpg 2x">
+        </div>
+        <p>
+          So the flow began to look like this:
+        </p>
+        <ul>
+          <li>• After scanning the item from the list, the storekeeper gets to the product page, where he sees: description of his task, input component, and confirmation button;</li>
+          <li>• The input component consists of buttons ("-", "+") and the value in the middle;</li>
+          <li>• Under the component is the confirmation button, after clicking on which, a text appears asking you to confirm the entered quantity.</li>
+        </ul>
+        <p>
+          This component helped us greatly reduce our space and keep the focus on the product's photo, as well as show more necessary additional attributes. And, of course, eliminate the error of entering more than indicated in the documents. As a fallback, when you try to enter more, the device will vibrate, and after several attempts, it will show an error with an explanation.
+        </p>
+        <p>
+          Over time, I improved it and placed it on the same level as the confirmation button, which allowed me to further reduce the height of the component.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/keyboard/pic4.jpg"
+            srcset="assets/pic/shelf/keyboard/pic4@2x.jpg 2x">
+        </div>
+        <p>
+          During testing of both options, we were afraid that during the input, the storekeepers would touch the confirmation button, but in practice this did not happen. In case of misclick, we still show a confirmation window.
+        </p>
+        <p>
+          Here, by the way, is an interesting point. In addition to the fact that we do not allow you to enter a larger quantity, after the first scan, we immediately show the value "1", since at least one product is already there, because, well, we scanned it.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/keyboard/pic5.jpg"
+            srcset="assets/pic/shelf/keyboard/pic5@2x.jpg 2x">
+        </div>
+        <p>
+          This is a very small detail, but very important. In other tasks, where the products are not in large quantities, but often just one product, this greatly speeds up the process.
+        </p>
+        <p>
+          Over time, we began to support more processes, and one of them was control of expiration dates. This task is automatically generated by the system. It involves a storekeeper to check one shelf for expired products. The warehouse system that we organized, in general, does not allow the registration of expired products, but, as I said, the human factor is always present and an almost spoiled good can sometimes appear on a shelf.
+        </p>
+        <ul>
+          <li>In this task, the storekeeper needs:</li>
+          <li>• to scan all products on the shelf;</li>
+          <li>• write-off those products (if any) that are close to the expiration date;</li>
+          <li>• after that, find and enter the least recent expiration date.</li>
+        </ul>
+        <p>
+          Afterwards, the system will know until which date it is possible not to re-check this shelf and will assume that there are no expired goods on this shelf.
+        </p>
+        <p>
+          For this task, we used the existing layout of the component, but have put a button in the place of the quantity. By clicking on it the Android’s native calendar opened. With it, the storekeeper indicated the earliest date. After confirmation, the calendar disappeared and the storekeeper could confirm his action. This solution was considered done for a while, but more on that later.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/keyboard/pic6.jpg"
+            srcset="assets/pic/shelf/keyboard/pic6@2x.jpg 2x">
+        </div>
+        <p>
+          At the same time, Shelf got a new type of user — a supervisor. Sometimes it’s the warehouse manager himself, but more often it’s someone else, who sometimes reviews and recounts goods and looks through the documentation. In general, he ensures that the warehouse functions properly and without any problems.
+        </p>
+        <p>
+          One of the processes that the supervisor conducts is the accounting of products for the kitchen. For example, he needs to indicate how many kilograms of carrots are in stock. To enter the number of kilograms, we began to use our input component, but it absolutely didn't work.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/keyboard/pic7.jpg"
+            srcset="assets/pic/shelf/keyboard/pic7@2x.jpg 2x">
+        </div>
+        <p>
+          The component didn't provide for input of decimal numbers. We needed to add a comma. When I tried to solve this problem by adding a comma to our component, I realized that the keyboard return is inevitable. But we returned it in an improved form.
+        </p>
+        <p>
+          Now let's go back a bit to the expiration component. After releasing this functionality, we got feedback that for products that have a long expiration period, such as Coca-Cola, it is very inconvenient to enter the date with the native Android's calendar. The storekeepers needed to swipe through for a long time until they found the month or even the year they needed.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/keyboard/pic8.jpg"
+            srcset="assets/pic/shelf/keyboard/pic8@2x.jpg 2x">
+        </div>
+        <p>
+          Besides, during the next visit to the warehouse, I saw that when entering the date, the storekeeper in his mind decoded the month number. For example, he found the product with the date, let's say, June 26, 2019, and then, while searching for the month, he counted to himself: January — 1st month, February — 2nd... and so on, until he reached the month he needed.
+        </p>
+        <p>
+          The solution to all of these problems was to enter the expiration date using the keyboard. Now the storekeeper needed to find the goods with the earliest expiration date and simply retype the numbers that he saw on the package. Without searches for the desired month and year and without decoding the month number.
+        </p>
+        <div class="img img--big">
+          <img alt="Interface"
+            src="assets/pic/shelf/keyboard/pic9.jpg"
+            srcset="assets/pic/shelf/keyboard/pic9@2x.jpg 2x">
+        </div>
+        <p>
+          The results of the testing of this component were higher than our expectations, and the storekeepers have been very fond of this mechanics.
+        </p>
+        <p>
+          So, we rejected the keyboard, introduced a new input component, and then again returned the keyboard for some tasks, but as an improved version.
+        </p>
+
+        <div class="morebtn">
+          <a href="index.html">Back to projects</a>
+        </div>
+      <!-- end of case 3 -->
+      </div>
+
+    <!-- end of content -->
+    </main>
+
+    <script src="assets/js/script.js" type="text/javascript"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(67016323, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/67016323" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+</html>

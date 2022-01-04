@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konstantin Baykov | Product Designer</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+
+    <header class="header container">
+      <div class="header__logo">
+        <a class="header__title link" href="index.html"><span class="icon-back"></span></a>
+      </div>
+
+      <nav class="header__nav" id="dropper">
+        <ul>
+          <!-- <li><a class="link" href="about.html">About & Contacts</a></li> -->
+          <li><a class="link" href="mailto: usual.member@gmail.com">usual.member@gmail.com</a></li>
+          <li><a class="link" target="_blank" href="https://linkedin.com/in/baykovkonstantin">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <span class="header__burger" onClick="toggleDiv('dropper');"></span>
+    </header>
+
+    <main class="content content--project container">
+      <div class="content__text container">
+        <h1 class="content__title">
+          Infra
+        </h1>
+        <p>
+          Calendar and notification service (with the ability to integrate it into third-party services) about technical works, releases, and incidents in Yandex's internal and infrastructure services
+        </p>
+      </div>
+
+      <div class="content__text container">
+        <h3 class="content__h3">
+          My responsibilities on this project:
+        </h3>
+        <ul>
+          <li>• Leading the design for a product;</li>
+          <li>• Mentoring of the other designer on a team;</li>
+          <li>• Coordinating of the development team;</li>
+          <li>• Conducting a user researches, interviews, and usability testings;</li>
+          <li>• Developing a design system and a dark theme for all infrastructure services.</li>
+        </ul>
+      </div>
+
+      <div class="content__text container">
+        <h2 class="content__h2">
+          Creating Infra
+          <span class="comment">Splitting or sharing tasks allows multiple warehouse employees to work simultaneously on resource-intensive tasks.</span>
+        </h2>
+        <p>
+          So the first case I want to tell you about is one of the infrastructure services that I've taken part in designing. And let's start with a little background.
+        </p>
+        <p>
+          First, there are a huge number of projects/products in the Yandex infrastructure. All of them are hosted in Yandex's own datacenters. In addition, you usually have several environments of the project and production can live in one DC, and pre-stable — in another. By the way, that's one of our datacenters which is located in Finland.
+        </p>
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/model.jpg"
+            srcset="assets/pic/infra/model@2x.jpg 2x">
+        </div>
+        <p class="comment">Datacenter in Finland</p>
+        <p>
+          Typically, a developer at Yandex uses several infrastructural services in his work, so it was very difficult and even impossible for them to monitor the news of all services and remember where and when there will be work and service will be unavailable. And this is not to mention incidents within the project when the service simply didn't work. In such cases, the manager or lead developer for some time became the call center operator in all chats, where he was asked why the service wasn't working.
+        </p>
+        <p>
+          When I found out about such a problem, I came up with the idea of service/calendar/status board, which we later called Infra.
+        </p>
+        <p>
+          So how to inform people about failures or upcoming work? Initially, there was nothing to start from (the project didn't exist in any way), but there was a clear need for a convenient alerting and monitoring tool. To learn more about challenges in the field, I conducted several interviews with managers and lead developers, where the main problems were announced both by users and themselves:
+        </p>
+        <ul>
+          <li>• First of all, it was not clear what was happening, what is happening, or what will happen.</li>
+          <li>• Second, there is no single place to learn about planned work on services.</li>
+          <li>• Last, but not least, a huge amount of time is spent by managers on communication with users.</li>
+        </ul>
+        <p>
+          As a result, it became obvious that there was a need for a single product, which contains a complete list of infrastructure services with their environments and the ability for any user to log in and find the service that interests him. Moreover, there should be a calendar in which all the current, past, and future works listed with their detailed description, as well as time intervals, to understand how long the work lasted or will last.
+        </p>
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/pic1.jpg"
+            srcset="assets/pic/infra/pic1@2x.jpg 2x">
+        </div>
+        <p class="comment">First concept: a list of services and events' timeline</p>
+        <p>
+          The first concept looked like this: on one screen — a list of services and timeline events and events are added to the calendar by the service's manager. I've put together a prototype in Figma and started conducting corridor studies and additional interviews.
+        </p>
+        <p>
+          In the end, I clarified some details. For example, that in fact, not all events lead to the shutdown of the service: it turned out that the events are divided into 2 types: major and minor. Therefore, I visually separated these events and added the ability to filter them. Another insight was that services exist in groups and users need to see the grouping.
+        </p>
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/pic2.jpg"
+            srcset="assets/pic/infra/pic2@2x.jpg 2x">
+        </div>
+        <p class="comment">Updated version: now you could see the groups of services and categories of events</p>
+        <p>
+          After a few more design iterations and developing a beta version of the interface, we gave out access to everyone interested. The feedback was very positive, but I identified several problems in the process of monitoring users and their feedback:
+        </p>
+        <ul>
+          <li>• First, it’s hard for users to navigate a huge list of services. Most users need a few specific services. They themselves solved this problem by opening several tabs in the browser;</li>
+          <li>• Second, sometimes they forgot to check the service because they didn't have a habit to do so, which is why users missed some notifications;</li>
+          <li>• Third, the service felt like it was one in a row in a huge list of infrastructure services.</li>
+          <div class="img">
+            <img alt="Interface"
+              src="assets/pic/infra/pic3.jpg"
+              srcset="assets/pic/infra/pic3@2x.jpg 2x">
+          </div>
+        </ul>
+        <p>
+          So, to solve the first problem, I suggested making presets — a filter with a set of services that are interesting to a certain group of users. This solved the problem and on the grounds of this one, I've got a new idea.
+        </p>
+
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/pic4.jpg"
+            srcset="assets/pic/infra/pic4@2x.jpg 2x">
+        </div>
+        <p class="comment">Step 1: Start creating a preset</p>
+
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/pic5.jpg"
+            srcset="assets/pic/infra/pic5@2x.jpg 2x">
+        </div>
+        <p class="comment">Step 2: Select services</p>
+
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/pic6.jpg"
+            srcset="assets/pic/infra/pic6@2x.jpg 2x">
+        </div>
+        <p class="comment">Step 3: Give your preset a name before it saves</p>
+
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/pic7.jpg"
+            srcset="assets/pic/infra/pic7@2x.jpg 2x">
+        </div>
+        <p class="comment">Step 4: The preset is created</p>
+
+        </p>
+        <p>
+          The solution to this problem was a feature that allowed sharing a preset with the ability to subscribe to all updates. Now it is enough to create a preset once and send it to the team.
+        </p>
+
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/pic8.jpg"
+            srcset="assets/pic/infra/pic8@2x.jpg 2x">
+        </div>
+        <p class="comment">Step 5: Copy the link for sharing the preset</p>
+
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/pic9.jpg"
+            srcset="assets/pic/infra/pic9@2x.jpg 2x">
+        </div>
+        <p class="comment">Step 6: Confirmation</p>
+
+        <p>
+          Solving other problems was more challenging. How to tell the user that some work on the service is currently going or is planned without going into the Infra interface? To solve this problem, a widget was designed that was built-into the header of each infrastructure service. Now you could find out about the work without even going to Infra.
+        </p>
+
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/pic10.jpg"
+            srcset="assets/pic/infra/pic10@2x.jpg 2x">
+        </div>
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/pic11.jpg"
+            srcset="assets/pic/infra/pic11@2x.jpg 2x">
+        </div>
+
+        <p>
+          Everything that I described above allowed users to be aware of past, current, and upcoming works in any format: inside Infra or services via widget. A convenient interface was implemented for developers to monitor the services they needed with the ability to display them on a large screen (TV). And of course, those responsible for services exhaled with relief and no longer spend their time explaining to everyone what was happening is happening or will happen with their services.
+        </p>
+        <p>
+          A couple more screens below:
+        </p>
+
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/pic12.jpg"
+            srcset="assets/pic/infra/pic12@2x.jpg 2x">
+        </div>
+        <p class="comment">The feed with all events — you can see present, past and even future</p>
+
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/pic13.jpg"
+            srcset="assets/pic/infra/pic13@2x.jpg 2x">
+        </div>
+        <p class="comment">Screen with information about the service</p>
+
+        <div class="img">
+          <img alt="Interface"
+            src="assets/pic/infra/pic14.jpg"
+            srcset="assets/pic/infra/pic14@2x.jpg 2x">
+        </div>
+        <p class="comment">Infra in a dark mode</p>
+
+        <div class="morebtn">
+          <a href="index.html">Back to projects</a>
+        </div>
+
+      <!-- end of case -->
+      </div>
+
+    <!-- end of content -->
+    </main>
+
+    <script src="assets/js/script.js" type="text/javascript"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(67016323, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/67016323" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+</html>

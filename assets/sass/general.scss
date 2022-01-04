@@ -1,0 +1,188 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.float-left {
+  float: left;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: $black;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+.text {
+  color: $black;
+
+  &--grey {
+    color: $grey;
+  }
+
+  &--underlined {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+      background: $primary;
+    }
+  }
+}
+
+.comment {
+  color: $grey;
+  display: block;
+  font-size: 12px;
+}
+
+.link {
+  -webkit-transition: color .3s ease-out 0s;
+  -moz-transition: color .3s ease-out 0s;
+  -o-transition: color .3s ease-out 0s;
+  transition: color .3s ease-out 0s;
+
+  &:hover {
+    text-decoration: underline;
+    color: $grey;
+  }
+
+  &--color {
+    color: $primary;
+  }
+
+  &--inline {
+    text-decoration: underline;
+  }
+
+  &--publication {
+    display: block;
+    margin-bottom: 12px;
+    padding-left: 28px;
+    font-size: 18px;
+    line-height: 1.6;
+    border-left: 3px solid $black;
+    font-weight: 600;
+
+    &:first-of-type {
+      margin-top: 24px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $grey;
+    }
+
+    .comment {
+      display: inline;
+      font-weight: 400;
+    }
+  }
+
+
+  &--block {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  &--disabled {
+    color: $grey;
+
+    &:hover {
+      color: $grey;
+    }
+  }
+
+  &--icon {
+    font-size: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: background-image .8s ease-out 0s;
+    -moz-transition: background-image .8s ease-out 0s;
+    -o-transition: background-image .8s ease-out 0s;
+    transition: background-image .8s ease-out 0s;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 16px;
+  text-decoration: none;
+  background: $very-light-grey;
+  border-radius: 16px;
+  font-weight: normal;
+  border-radius: 8px;
+
+  -webkit-transition: background .2s ease-out 0s;
+  -moz-transition: background .2s ease-out 0s;
+  -o-transition: background .2s ease-out 0s;
+  transition: background .2s ease-out 0s;
+
+  &:hover,
+  &:active,
+  &focus {
+    background: $hover;
+  }
+
+}
+
+.morebtn {
+  margin-top: 80px;
+  width: 100%;
+
+  a {
+    text-align: center;
+
+    display: block;
+    padding: 24px;
+    background: $very-light-grey;
+    border-radius: 16px;
+
+    &:hover {
+      background: $hover;
+  }
+
+  }
+}
+
+
+@media (max-width: 1080px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0 20px;
+  }
+}

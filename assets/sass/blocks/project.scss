@@ -1,0 +1,79 @@
+.project {
+  display: block;
+  float: left;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 18px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  &:hover {
+    background: $hover;
+    transition: background-color .55s;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  &__info {
+    margin-top: 28px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    line-height: 1.4;
+    font-weight: bold;
+  }
+
+  &__hint {
+    color: $light-grey;
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $grey;
+  }
+
+  p {
+    margin: 6px 0 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+@media (max-width: 1080px) {  // mobiles only
+
+  .project {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 1080px) {  // tablet & desktop
+
+  .project {
+    max-width: 500px;
+
+    &:nth-child(odd) {
+      margin-left: -20px;
+      margin-right: 60px;
+    }
+
+    &:nth-child(even) {
+      margin-right: -20px;
+    }
+  }
+
+}

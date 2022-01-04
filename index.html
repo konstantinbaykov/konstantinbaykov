@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konstantin Baykov | Product Designer</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+
+    <header class="header container">
+      <div class="header__logo">👋</div>
+
+      <nav class="header__nav" id="dropper">
+        <ul>
+          <!-- <li><a class="link" href="about.html">About & Contacts</a></li> -->
+          <li><a class="link" href="mailto: usual.member@gmail.com">usual.member@gmail.com</a></li>
+          <li><a class="link" target="_blank" href="https://linkedin.com/in/baykovkonstantin">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <span class="header__burger" onClick="toggleDiv('dropper');"></span>
+    </header>
+
+    <section class="screen container">
+      <h1 class="screen__title">Hi, I'm Konstantin Baykov</h1>
+      <p>Digital product designer at <a class="link link--inline" target="_blank" href="https://www.bloomberg.com/news/articles/2020-01-28/online-groceries-delivered-faster-than-amazon?cmpid=socialflow-facebook-business&utm_medium=social&utm_campaign=socialflow-organic&utm_content=business&utm_source=facebook">Yandex Lavka</a>. We deliver groceries within 15 minutes. Here I'm working on Warehouse Management System and Portable Data Terminal app. Previously, a designer of data storage systems, monitoring services, and development tools at <a class="link link--inline" target="_blank" href="https://yandex.com/company/">Yandex</a>.</p>
+      <p>I have experience in producing and launching big services from scratch, building design systems, mentoring other designers, refining processes within design and development teams, conducting user research, and surveys.</p>
+      <p>
+        <a class="btn" target="_blank" href="assets/files/resume_baykov.pdf">Download resume</a>
+      </p>
+    </section>
+
+
+
+    <main class="container clearfix content content--portfolio">
+
+      <div class="project clearfix">
+        <a href="shelf.html">
+          <img class="project__pic" alt="Shelf" src="assets/pic/covers/shelf.jpg" srcset="assets/pic/covers/shelf@2x.jpg 2x">
+          <div class="project__info">
+            <h3 class="project__title">Shelf <span class="project__hint">+ Case Studies</span></h3>
+            <p>Portable Data Terminal app for warehouse employees to perform all operations in the warehouse: order collection, acceptance of goods, control of expiration dates, out-of-stock appearance, and so on</p>
+            <h4 class="project__subtitle">Yandex Lavka, 2020 — now</h4>
+          </div>
+        </a>
+      <!-- end of Shelf -->
+      </div>
+
+      <div class="project clearfix">
+        <a href="infra.html">
+          <img class="project__pic" alt="Infra" src="assets/pic/covers/infra.jpg" srcset="assets/pic/covers/infra@2x.jpg 2x">
+          <div class="project__info">
+            <h3 class="project__title">Infra <span class="project__hint">+ Case Study</span></h3>
+            <p>Calendar and notification service (with the ability to integrate it into third-party services) about technical works, releases, and incidents in Yandex's internal and infrastructure services</p>
+            <h4 class="project__subtitle">Yandex Infrastructure, 2019</h4>
+          </div>
+        </a>
+      <!-- end of Infra -->
+      </div>
+
+      <div class="project clearfix">
+        <a href="wms.html">
+          <img class="project__pic" alt="Warehouse Management System" src="assets/pic/covers/wms.jpg" srcset="assets/pic/covers/wms@2x.jpg 2x">
+          <div class="project__info">
+            <h3 class="project__title">Warehouse</h3>
+            <p>The warehouse management system is a web application that helps to monitor and manage day-to-day operations in a warehouse. It manages the receipt and placement of inventory, documents flow, and so on</p>
+            <h4 class="project__subtitle">Yandex Lavka, 2020 — now</h4>
+          </div>
+        </a>
+      <!-- end of WMS -->
+      </div>
+
+      <div class="project clearfix">
+        <a href="rtmr.html">
+          <img class="project__pic" alt="RTMR" src="assets/pic/covers/rtmr.jpg" srcset="assets/pic/covers/rtmr@2x.jpg 2x">
+          <div class="project__info">
+            <h3 class="project__title">RTMR</h3>
+            <p>A system for visualizing distributed computing that is used for parallel computing over very large (up to several petabytes) data sets in computer clusters</p>
+            <h4 class="project__subtitle">Yandex Infrastructure, 2019</h4>
+          </div>
+        </a>
+      <!-- end of RTMR -->
+      </div>
+
+      <div class="project clearfix">
+        <a href="testenv.html">
+          <img class="project__pic" alt="TestEnv" src="assets/pic/covers/testenv.jpg" srcset="assets/pic/covers/testenv@2x.jpg 2x">
+          <div class="project__info">
+            <h3 class="project__title">TestEnv</h3>
+            <p>The testing environment that allows running certain test suites. It includes configuring the server to run tests, hardware and network configuration</p>
+            <h4 class="project__subtitle">Yandex Infrastructure, 2018–2019</h4>
+          </div>
+        </a>
+      <!-- end of TestEnv -->
+      </div>
+
+      <div class="project clearfix">
+        <a href="arcanum.html">
+          <img class="project__pic" alt="Arcanum" src="assets/pic/covers/arcanum.jpg" srcset="assets/pic/covers/arcanum@2x.jpg 2x">
+          <div class="project__info">
+            <h3 class="project__title">Arcanum</h3>
+            <p>Internal web-based DevOps lifecycle tool that provides a Git/SVN-repository manager with continuous integration/continuous deployment pipeline features</p>
+            <h4 class="project__subtitle">Yandex Infrastructure, 2017–2019</h4>
+          </div>
+        </a>
+      <!-- end of Arcanum -->
+      </div>
+
+      <div class="project clearfix">
+        <a href="broadcasts.html">
+          <img class="project__pic" alt="Broadcasts" src="assets/pic/covers/broadcasts.jpg" srcset="assets/pic/covers/broadcasts@2x.jpg 2x">
+          <div class="project__info">
+            <h3 class="project__title">Broadcasts</h3>
+            <p>Service for creating and managing broadcasts for internal meetings of the company with the ability to view them and various communication inside</p>
+            <h4 class="project__subtitle">Yandex, 2019</h4>
+          </div>
+        </a>
+      <!-- end of Broadcasts -->
+      </div>
+
+      <div class="project clearfix">
+        <a href="surveys.html">
+          <img class="project__pic" alt="Surveys" src="assets/pic/covers/surveys.jpg" srcset="assets/pic/covers/surveys@2x.jpg 2x">
+          <div class="project__info">
+            <h3 class="project__title">Surveys</h3>
+            <p>A platform that allows individuals and businesses to conduct various researches of the target audience (can be really narrow) of a new or existing product within a few days</p>
+            <h4 class="project__subtitle">Yandex, 2017</h4>
+          </div>
+        </a>
+      <!-- end of Surveys -->
+      </div>
+
+      <div class="project clearfix">
+        <a href="webmaster.html">
+          <img class="project__pic" alt="Webmaster" src="assets/pic/covers/webmaster.jpg" srcset="assets/pic/covers/webmaster@2x.jpg 2x">
+          <div class="project__info">
+            <h3 class="project__title">Webmaster</h3>
+            <p>System by which site owners can monitor the statistics of requests for which the site is shown in the search. It allows you to observe how impressions, clicks, CTR snippets and other indicators change</p>
+            <h4 class="project__subtitle">Yandex, 2017</h4>
+          </div>
+        </a>
+      <!-- end of Webmaster -->
+      </div>
+
+      <div class="project clearfix">
+        <a href="alfa.html">
+          <img class="project__pic" alt="Alfa" src="assets/pic/covers/alfamobile.jpg" srcset="assets/pic/covers/alfamobile@2x.jpg 2x">
+          <div class="project__info">
+            <h3 class="project__title">Alfa Mobile</h3>
+            <p>A banking app for individuals to perform various banking operations such as transferring money, checking how much money is left, or adding funds to a mobile account, and so on</p>
+            <h4 class="project__subtitle">Alfa Bank, 2016</h4>
+          </div>
+        </a>
+      <!-- end of Alfa -->
+      </div>
+
+      <div class="morebtn float-left">
+        <a href="other.html">Other projects</a>
+      </div>
+
+    <!-- end of content-portfolio -->
+    </main>
+
+    <script src="assets/js/script.js" type="text/javascript"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(67016323, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/67016323" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+</html>
